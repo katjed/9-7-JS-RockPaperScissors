@@ -46,6 +46,10 @@ function setGameElements() {
     break;
     case 'ended':
         newGameBtn.innerText = 'Play again';
+        playerPickElem.innerHTML = 'Player selection';
+        computerPickElem.innerHTML = 'Computer selection';
+        playerResultElem.innerHTML = 'Player score';
+        computerResultElem.innerHTML = 'Computer score';
     case 'notStarted':
     default:
         newGameElem.style.display = 'block';
@@ -77,6 +81,7 @@ function newGame() {
 
 // Player pick & computer pick
 
+/*
 function playerPick(playerPick) {
     console.log(playerPick);
 }
@@ -84,6 +89,7 @@ function playerPick(playerPick) {
 var x = Math.random();
 
 Math.floor(Math.random()*3); 
+*/
 
 function getComputerPick() {
     var possiblePicks = ['rock', 'paper', 'scissors'];
@@ -95,12 +101,14 @@ var playerPickElem = document.getElementById('js-playerPick'),
     playerResultElem = document.getElementById('js-playerResult'),
     computerResultElem = document.getElementById('js-computerResult');
 
+/* 
 function playerPick(playerPick) {
     var computerPick = getComputerPick();
 
     playerPickElem.innerHTML = playerPick;
     computerPickElem.innerHTML = computerPick;
-}
+} 
+*/
 
 // Round winner
 
@@ -152,7 +160,7 @@ function setGamePoints() {
 
 function checkGameWinner() {
 	if (player.score === 10 ) {
-		alert('Congratulations! You won');
+		alert('Congratulations! You won.');
 		gameState = 'ended';
 		setGameElements();
 	} else if (computer.score === 10) {
