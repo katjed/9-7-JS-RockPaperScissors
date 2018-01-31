@@ -11,13 +11,13 @@ var pickRock = document.getElementById('js-playerPick_rock'),
     pickScissors = document.getElementById('js-playerPick_scissors');
 
 pickRock.addEventListener('click', function() { 
-	playerPick('rock') 
+	playerPick('rock'); 
 });
 pickPaper.addEventListener('click', function() {
-	playerPick('paper') 
+	playerPick('paper'); 
 });
 pickScissors.addEventListener('click', function() {
-	playerPick('scissors') 
+	playerPick('scissors'); 
 });
 
 // Initial values
