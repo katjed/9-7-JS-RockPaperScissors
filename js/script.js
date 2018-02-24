@@ -39,7 +39,7 @@ function setGameElements() {
         newGameElem.style.display = 'none';
         pickElem.style.display = 'block';
         resultsElem.style.display = 'block';
-    break;
+        break;
     case 'ended':
         newGameBtn.innerText = 'Play again';
         playerPickElem.innerHTML = 'Player selection';
